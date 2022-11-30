@@ -18,17 +18,27 @@ public class Main {
 
         withdrawEmployers();
 
+        printSeparator();
+
         Employee mostPoorEmployee = searchMinSalary();
         System.out.println("Сотрудник с минимальной зарплатой: " + mostPoorEmployee);
+
+        printSeparator();
 
         Employee mostRichEmployer = searchMaxSalary();
         System.out.println("Сотрудник с максимальной зарплатой: " + mostRichEmployer);
 
+        printSeparator();
+
         int allSalary = getTotalSalary();
         System.out.println("Зарплатный фонд: " + allSalary);
 
+        printSeparator();
+
         double mediumSalary = getMediumSalary();
         System.out.println("Средняя зарплата составляет: " + mediumSalary);
+
+        printSeparator();
 
         getNameEmployers();
 
@@ -94,5 +104,9 @@ public class Main {
             return (double) getTotalSalary() / count;
         }
         return 0;
+    }
+
+    public static void printSeparator() {
+        System.out.println("---------------------------------");
     }
 }
