@@ -1,7 +1,7 @@
 public class Employee {
     public static int counter;
 
-    public int id;
+    private int id;
 
     private int department;
 
