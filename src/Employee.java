@@ -3,11 +3,11 @@ public class Employee {
 
     public int id;
 
-    int department;
+    private int department;
 
-    int salary;
+    private int salary;
 
-    String name;
+    private String name;
 
     public Employee (String name, int department, int salary){
         this.name = name;
